@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base target="_blank" />
     <link
       rel="icon"
       type="image/png"
@@ -28,7 +29,7 @@
     <script defer src="./dist/script.js"></script>
     <title>Frontend Mentor | Pricing component with toggle</title>
   </head>
-  <body>
+  <body class="d-flex flex-column justify-content-between text-center">
     <header class="header">
       <h1 class="sr-only">Pricing component with toggle</h1>
       <h2 class="header__main my-4">Our Pricing</h2>
@@ -80,7 +81,7 @@
             <li class="pricing__feature">2 Users Allowed</li>
             <li class="pricing__feature">Send up to 3 GB</li>
           </ul>
-          <a class="pricing__cta" href="#">Learn More</a>
+          <a class="pricing__cta" href="#" target="_self">Learn More</a>
         </section>
         <section class="pricing__card pricing__card--highlight">
           <h3 class="pricing__title">Professional</h3>
@@ -101,7 +102,10 @@
             <li class="pricing__feature">5 Users Allowed</li>
             <li class="pricing__feature">Send up to 10 GB</li>
           </ul>
-          <a class="pricing__cta pricing__cta--highlight" href="#"
+          <a
+            class="pricing__cta pricing__cta--highlight"
+            href="#"
+            target="_self"
             >Learn More</a
           >
         </section>
@@ -118,10 +122,29 @@
             <li class="pricing__feature">10 Users Allowed</li>
             <li class="pricing__feature">Send up to 20 GB</li>
           </ul>
-          <a class="pricing__cta" href="#">Learn More</a>
+          <a class="pricing__cta" href="#" target="_self">Learn More</a>
         </section>
       </div>
     </main>
-    <!-- Annually Monthly   -->
+    <footer class="attribution">
+      <p class="attribution__section">
+        Challenge by
+        <a
+          class="attribution__link"
+          href="https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC"
+          rel="noopener noreferrer"
+          >Frontend Mentor</a
+        >.
+      </p>
+      <p class="attribution__section">
+        Coded by
+        <a
+          class="attribution__link"
+          href="https://twitter.com/santu69"
+          rel="noopener noreferrer"
+          >Shiva Santosh Jana</a
+        >.
+      </p>
+    </footer>
   </body>
 </html>

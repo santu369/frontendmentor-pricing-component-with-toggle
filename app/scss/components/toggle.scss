@@ -54,6 +54,9 @@
     outline-offset: rem(2);
     opacity: 0.7;
   }
+  &__checkbox:focus:not(:focus-visible) {
+    outline: transparent;
+  }
   /* checked states */
   &__checkbox:checked + &__button::after {
     transform: translate(calc(2.3em - 100%), -50%);
